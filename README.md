@@ -67,3 +67,14 @@ CMakeLists.txt是我们主要写的文件,它可以帮助你的编译器链接�
 `set_target_properties(hello PROPERTIES VERSION 1.2 SOVERSION 1)`
 设置动态库版本号为1.2，API版本号为1
 
+`target_link_libraries(A PUBLIC B)`
+A会链接到B，当C链接A时会自动的也链接到B
+
+`target_link_libraries(A private B)`
+A会链接到B，当C链接A时若A中有B的函数，则会报错该函数未找到，此时需要增加`target_link_libraries(C PRIVATE B)`
+
+`target_link_libraries(A INTERFACE B)`
+A不会链接到B，但是C链接A的时候，A会给C提供interface，C会链接到B。
+
+## 特殊的环境变量
+
