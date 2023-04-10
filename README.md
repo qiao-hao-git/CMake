@@ -78,3 +78,13 @@ A不会链接到B，但是C链接A的时候，A会给C提供interface，C会链�
 
 ## 特殊的环境变量
 
+
+## CMake官方
+
+[CMake官方文档](https://cmake.org/cmake/help/cmake2.4docs.html)
+
+[CMake官方主页](https://cmake.org/)
+
+[CMake官方教程](https://cmake.org/cmake-tutorial/)
+
+[Wiki](https://gitlab.kitware.com/cmake/community/-/wikis/Home)
